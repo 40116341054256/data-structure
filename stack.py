@@ -6,7 +6,7 @@ class stack():
         if (len(self.stack))<=0:
             return -1
         else:
-            return self.stack[len.self.stack-1]
+          print(self.stack[len(self.stack)-1])
     def pop(self):
         if (len(self.stack))<=0:
             return False
@@ -28,14 +28,15 @@ class stack():
             return True
         else : return False
     def reverse(lst):
-        s=stack()
+        s = stack(100)
         for e in lst:
-            s.push(e)
-        for i in range (len(lst)):
-            lst[i]=s.pop()
+         s.push(e)
+        for i in range(len(lst)):
+         lst[i] = s.pop()
+        return lst
     def rev_stacks(s):
-        s1=stack()
-        s2=stack()
+        s1=stack(100)
+        s2=stack(100)
         while not s.is_empty():
             s1.push(s.pop())
         while not s1.is_empty():
@@ -82,5 +83,3 @@ class stack():
                 return True
             else:
                 return False
-
-                

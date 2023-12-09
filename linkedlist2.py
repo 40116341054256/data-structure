@@ -101,7 +101,7 @@ class DoublyLinkedList:
         return data
 
 
-# Example usage:
+
 my_doubly_linked_list = DoublyLinkedList()
 my_doubly_linked_list.insert_at_end(1)
 my_doubly_linked_list.insert_at_end(2)
@@ -120,5 +120,5 @@ my_doubly_linked_list.display()
 my_doubly_linked_list.delete_at_front()
 my_doubly_linked_list.display()
 
-my_doubly_linked_list.delete_at_middle(1)
+my_doubly_linked_list.delete_at_middle()
 my_doubly_linked_list.display()

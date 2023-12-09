@@ -1,31 +1,3 @@
-# class queue_c:
-#   def init(self,k):
-#     self.k=k 
-#     self.queue=[None]*k
-#     self.front=-1
-#     self.rear=-1
-#     def insqueue(self,data):
-#       if self.rear%k==self.front:
-#         print("full")
-#       elif self.front==-1:
-#          self.front=0
-#          self.rear=0
-#          self.queue[self.rear]=data
-#       else:
-#         self.rear+=1
-#         self.queue[self.rear]=data
-#     def deletec(self):
-#      if self.front==-1:
-#          print("empty")
-#      elif self.front==self.rear:
-#          t=self.queue[self.front]
-#          self.front=-1
-#          self.raer=-1
-#          return t
-#      else:
-#          t=self.queue[self.front]
-#          self.fornt+=1
-#          return t
 class CircularQueue:
     def __init__(self, k):
         self.k = k
@@ -127,18 +99,3 @@ class CircularQueue:
             else:
                 self.rear = (self.rear - 1 + self.k) % self.k
             return data
-
-# Example usage:
-my_circular_queue = CircularQueue(5)
-my_circular_queue.enqueue(1)
-my_circular_queue.enqueue(2)
-my_circular_queue.enqueue(3)
-my_circular_queue.enqueue(4)
-my_circular_queue.enqueue(5)
-my_circular_queue.display()
-my_circular_queue.enqueue_at_front(0)
-my_circular_queue.display()
-my_circular_queue.enqueue_at_middle(100)
-my_circular_queue.display()
-my_circular_queue.dequeue_at_rear()
-my_circular_queue.display()
